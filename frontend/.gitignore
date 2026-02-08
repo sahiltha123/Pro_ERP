@@ -1,4 +1,5 @@
-# Logs
+# ─────────────────────────────────────────────────────────────
+# Logs & debug files
 logs
 *.log
 npm-debug.log*
@@ -7,18 +8,64 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# ─────────────────────────────────────────────────────────────
+# Dependency directories (never commit these)
 node_modules
+/.pnp
+.pnp.js
+
+# ─────────────────────────────────────────────────────────────
+# Build / output folders (frontend & some backends)
 dist
 dist-ssr
-*.local
+build
+coverage
+/.next
+/.cache
+/.parcel-cache
 
-# Editor directories and files
+# ─────────────────────────────────────────────────────────────
+# Environment variables – NEVER commit real secrets!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# But DO commit example files so others know what to fill
+!.env.example
+
+# ─────────────────────────────────────────────────────────────
+# Editor / OS / temp files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ─────────────────────────────────────────────────────────────
+# Testing & coverage
+coverage/
+.nyc_output/
+
+# ─────────────────────────────────────────────────────────────
+# Misc / temporary
+*.bak
+*.backup
+*.tmp
+*.temp
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ─────────────────────────────────────────────────────────────
+# Optional: if you have large files or assets you don't want
+# *.zip
+# *.rar
+# large-dataset.csv
