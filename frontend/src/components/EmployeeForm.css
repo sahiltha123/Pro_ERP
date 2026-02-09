@@ -62,7 +62,7 @@
   border-bottom: 2px solid var(--background-body);
 }
 
-/* Input icon styles moved to index.css */
+/* Input icon styles move to index.css */
 .form-actions {
   display: flex;
   justify-content: flex-end;
